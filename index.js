@@ -118,5 +118,9 @@ app.get('/about', (req, res) => {
   res.json(about);
 });
 
-//
+//POST endpoint to update about me data
+app.post("/about", (req, res) => {
+about = { ...about, ...req.body };
+res.json({message: "Pofile updated successfully", about});
+});
 
