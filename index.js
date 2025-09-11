@@ -113,4 +113,10 @@ let about = {
 }
 
 
+//GET endpoint to fetch about me data
+app.get('/about', (req, res) => {
+  res.json(about);
+});
+
+//
 
