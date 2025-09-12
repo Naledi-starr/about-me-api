@@ -110,27 +110,26 @@ let about = {
     "phone": "0733978321",
     "linkedin": "https://www.linkedin.com/in/naledi-motswiane-1234a5243/"
   }
-}
+};
 
-
-//Root route
+// Root route
 app.get("/", (req, res) => {
-  res.send("Welcome to the About Me API 🚀.Go to /about to see my profile.");
+  res.send("Welcome to the About Me API 🚀. Go to /about to see my profile.");
 });
 
-//GET endpoint to fetch about me data
+// GET endpoint to fetch about me data
 app.get("/about", (req, res) => {
   res.json(about);
-});
-
-//POST endpoint to update about me data
-app.post("/about", (req, res) => {
-about = { ...about, ...req.body };
-res.json({message: "Pofile updated successfully", about});
 });
 
 // POST endpoint to update about me data
 app.post("/about", (req, res) => {
   about = { ...about, ...req.body };
   res.json({ message: "Profile updated successfully", about });
+});
+
+// Start the server
+const PORT = process.env.PORT || 3002;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
