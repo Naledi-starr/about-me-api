@@ -1,4 +1,4 @@
-````markdown
+
 # About Me API 🚀
 
 A simple Node.js and Express-based REST API that serves information about **Naledi Mankogele Motswiane** — Software Developer, problem-solver, and tech enthusiast.
