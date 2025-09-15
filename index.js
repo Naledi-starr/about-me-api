@@ -120,7 +120,7 @@ app.get("/", (req, res) => {
   res.send(`
     <html>
       <head>
-        <title>Welcome 💜</title>
+        <title>💜Naledi M Motswiane💜</title>
         <style>
           body {
             font-family: Arial, sans-serif;
@@ -153,7 +153,7 @@ app.get("/", (req, res) => {
         </style>
       </head>
       <body>
-        <h1>Welcome to Naledi's About Me API 💜</h1>
+        <h1>💜💜Welcome to Naledi Profile💜💜</h1>
         <a href="/about"><button>View My Profile</button></a>
       </body>
     </html>
